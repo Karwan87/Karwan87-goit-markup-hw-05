@@ -108,16 +108,9 @@ body {
 
   color: #212121;
 }
-.agency:hover::after {
-  content: "";
-  position: absolute;
-  left: -10%;
-  bottom: -33px;
-  width: 120%;
-  height: 5px;
-  background-color: #2196f3;
+.agency:hover {
+  color: #2196f3;
 }
-
 .portfolio {
   position: relative;
   text-decoration: none;
@@ -126,7 +119,10 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.portfolio:hover::after {
+.portfolio:hover {
+  color: #2196f3;
+}
+.active-link:after {
   content: "";
   position: absolute;
   left: -10%;
@@ -134,7 +130,6 @@ body {
   width: 120%;
   height: 5px;
   background-color: #2196f3;
-  color: #2196f3;
 }
 .contact {
   position: relative;
@@ -145,14 +140,8 @@ body {
 
   color: #212121;
 }
-.contact:hover::after {
-  content: "";
-  position: absolute;
-  left: -10%;
-  bottom: -33px;
-  width: 120%;
-  height: 5px;
-  background-color: #2196f3;
+.contact:hover {
+  color: #2196f3;
 }
 .email {
   font-size: 14px;
@@ -304,6 +293,7 @@ li {
   border: 1px solid #eeeeee;
   margin: 0 auto;
 }
+
 .portfoliobox:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -552,11 +542,4 @@ ul {
   position: absolute;
   top: 10px;
   right: 10px;
-}
-.portfolio-overlay:hover {
-  overflow: visible;
-  transition-delay: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
 }
