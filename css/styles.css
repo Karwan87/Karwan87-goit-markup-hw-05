@@ -554,8 +554,12 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0 0 0 / 0.5);
-  transition: transform 0.25ms;
+  transition: linear;
+  transition-duration: 0.5s;
+  visibility: initial;
+  transform: scale(1);
 }
+
 .is-hidden {
   transform: scale(0);
   visibility: hidden;
@@ -566,10 +570,10 @@ ul {
   position: absolute;
   width: 400px;
   height: 400px;
-  left: 600px;
-  right: 600px;
-  top: 25%;
+  left: 50%;
+  top: 50%;
   background-color: #ffffff;
+  transform: translate(-50%, -50%);
 }
 .modal-btn {
   position: absolute;
