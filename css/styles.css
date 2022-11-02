@@ -17,8 +17,8 @@ body {
 .background-prologue {
   background-image: linear-gradient(
       to bottom,
-      rgba(80, 80, 80, 0.4),
-      rgba(80, 80, 0, 0.4)
+      rgba(110, 108, 108, 0.3),
+      rgba(47, 48, 58, 0.4)
     ),
     url("../images/Background-section.jpg");
   background-repeat: no-repeat;
@@ -79,6 +79,12 @@ body {
   --color2: #2196f3;
   --color5: #2196f3;
   cursor: pointer;
+}
+.email:hover {
+  fill: #2196f3;
+  cursor: pointer;
+
+  transition: 500ms;
 }
 .logo {
   width: 145px;
@@ -143,6 +149,7 @@ body {
 }
 .contact:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .email {
   font-size: 14px;
@@ -150,19 +157,18 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.email:hover {
-  color: #2196f3;
-}
-.email:focus {
-  color: #2196f3;
-}
 a:hover {
   color: #2196f3;
+  fill: #2196f3;
+  transition: 500ms;
 }
 a:focus {
   color: #2196f3;
+  fill: #2196f3;
+  transition: 500ms;
 }
 a {
+  text-decoration: none;
   color: #757575;
 }
 .telephone {
@@ -175,9 +181,11 @@ a {
 }
 .telephone:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .telephone:focus {
   color: #2196f3;
+  transition: 500ms;
 }
 .title2 {
   font-weight: 700;
@@ -222,8 +230,6 @@ a {
   padding: 0;
   margin: 0 10px;
   max-width: 270px;
-}
-.figcaption1:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -321,7 +327,7 @@ li {
   padding: 10%;
   overflow: hidden;
 }
-.portfoliobox:hover .portfolio-overlay:hover {
+.portfoliobox:hover .portfolio-overlay {
   transform: translate(0);
   transition: transform 250ms ease;
   transform: cubic-bezier(0.4 0, 0.2, 1);
@@ -451,31 +457,33 @@ ul {
   row-gap: 30px;
 }
 .social-links {
-  max-width: 270px;
-  max-height: 80px;
+  max-width: 206px;
+  max-height: 56px;
   display: flex;
   align-content: space-between;
   padding: 5px;
   margin-inline-start: 32px;
   margin-inline-end: 32px;
+  justify-content: center;
 }
 .social-links svg:hover {
-  --color1: #afb1b8;
-  --color2: #ffffff;
-  --color3: #2196f3;
-  --color4: #ffffff;
   cursor: pointer;
+  fill: #2196f3;
+  --color4: #ffffff;
+}
+.social-links-icons {
+  fill: #ffffff;
+  background-color: #ffffff;
+  transition: 500ms;
 }
 .figcaptionclients {
   position: relative;
   padding: 18px 32px 14px 32px;
-  max-width: 170px;
-  max-height: 92px;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.figcaptionclients svg:hover {
+.figcaptionclients:hover svg {
   --color4: #2196f3;
   cursor: pointer;
 }
@@ -489,13 +497,14 @@ ul {
   max-width: 1170px;
   justify-content: space-between;
 }
+.pointer-in-list:hover {
+  cursor: pointer;
+}
 .social {
   color: #ffffff;
   display: flex;
   text-align: left;
-  --color2: #ffffff;
-  --color4: #ffffff;
-  --color3: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
 .icon:hover {
@@ -516,10 +525,9 @@ ul {
   gap: 10px;
 }
 .li-class svg:hover {
-  --color1: #afb1b8;
-  --color2: #ffffff;
-  --color3: #2196f3;
+  fill: #2196f3;
   --color4: #ffffff;
+  transition: 500ms;
 }
 .social-items {
   margin-top: 60px;
