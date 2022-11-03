@@ -472,12 +472,12 @@ ul {
   justify-content: space-between;
 }
 .social-links-icons {
-  max-width: 42px;
-  max-height: 42px;
+  max-width: 44px;
+  max-height: 44px;
   margin-inline: 5px;
-  justify-content: space-between;
   fill: #afb1b8;
   transition: 500ms;
+  align-items: left;
   border-radius: 50%;
 }
 .figcaptionclients {
