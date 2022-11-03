@@ -77,8 +77,7 @@ body {
   align-items: stretch;
 }
 .second-menu-icons:hover {
-  --color2: #2196f3;
-  --color5: #2196f3;
+  fill: #2196f3;
   cursor: pointer;
 }
 .email:hover {
@@ -147,7 +146,6 @@ body {
 }
 .contact:hover {
   color: #2196f3;
-  
 }
 .email {
   font-size: 14px;
@@ -228,6 +226,7 @@ a {
   padding: 0;
   margin: 0 10px;
   max-width: 270px;
+  height: 428px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -286,7 +285,6 @@ li {
   color: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    
 }
 
 .button:focus {
@@ -457,24 +455,30 @@ ul {
   row-gap: 30px;
 }
 .social-links {
-  max-width: 206px;
-  max-height: 56px;
+  box-sizing: content-box;
+  width: 206px;
+  height: 56px;
   display: flex;
-  align-content: space-between;
-  padding: 5px;
   margin-inline-start: 32px;
   margin-inline-end: 32px;
   justify-content: center;
+  align-items: center;
 }
 .social-links svg:hover {
   cursor: pointer;
-  fill: #2196f3;
-  --color4: #ffffff;
+  fill: #ffffff;
+  background-color: #2196f3;
+  border-radius: 50%;
+  justify-content: space-between;
 }
 .social-links-icons {
-  fill: #ffffff;
-  background-color: #ffffff;
+  max-width: 42px;
+  max-height: 42px;
+  margin-inline: 5px;
+  justify-content: space-between;
+  fill: #afb1b8;
   transition: 500ms;
+  border-radius: 50%;
 }
 .figcaptionclients {
   position: relative;
@@ -483,8 +487,8 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.figcaptionclients:hover svg {
-  --color4: #2196f3;
+.figcaptionclients:hover {
+  border-color: #2196f3;
   cursor: pointer;
 }
 .clients-box-style {
@@ -497,18 +501,31 @@ ul {
   max-width: 1170px;
   justify-content: space-between;
 }
+.pointer-in-list {
+  background-color: #ffffff;
+  fill: #afb1b8;
+  transition: 500ms;
+}
 .pointer-in-list:hover {
   cursor: pointer;
+  fill: #2196f3;
 }
-.social {
+.social-title {
   color: #ffffff;
   display: flex;
   text-align: left;
-  fill: rgba(255, 255, 255, 0.1);
+}
+.social {
+  fill: #ffffff;
+  display: flex;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  border-radius: 50%;
+  transition: 500ms;
 }
 .icon:hover {
-  fill: #2196f3;
+  fill: #ffffff;
 }
 .icon-box {
   background: #f5f4fa;
@@ -523,11 +540,13 @@ ul {
 .li-class {
   display: flex;
   gap: 10px;
+
+  transition: 500ms;
 }
 .li-class svg:hover {
-  fill: #2196f3;
-  --color4: #ffffff;
-  transition: 500ms;
+  fill: #ffffff;
+  background-color: #2196f3;
+  border-radius: 50%;
 }
 .social-items {
   margin-top: 60px;
